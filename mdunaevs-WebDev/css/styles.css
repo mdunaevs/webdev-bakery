@@ -1,0 +1,910 @@
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#container{
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.col-sm-2{
+  font-family: 'Enriqueta, serif';
+  font-variant: small-caps;
+  color: #800020;
+  text-align: center;
+  align-self: center;
+}
+
+.col-sm-3{
+  font-family: 'Enriqueta, serif';
+  font-variant: small-caps;
+  color: #800020;
+  text-align: center;
+  align-self: center;
+}
+
+.col-sm-4{
+  font-family: 'Enriqueta, serif';
+  font-variant: small-caps;
+  color: #800020;
+  text-align: center;
+  align-self: center;
+}
+
+a.col-sm{
+    font-size: 85%;
+    font-family: Georgia;
+}
+
+p.col-sm {
+    font-variant: none;
+    font-size: 85%;
+    font-family: Georgia;
+    padding-top: 5px;
+}
+img.col-sm {
+    padding: 5px;
+}
+
+footer{
+    /*background-color: #ffffff;*/
+    /*background-image: url("../images/marble.jpeg");*/
+    padding: 10px;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/*Restaurant name bootstrap*/
+/*#top_row h1{
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    color: #ffffff;
+    text-align: left;
+    font-size: 3vw;
+}*/
+
+img.logo{
+    width: 100px;
+}
+.navbar-collapse {
+    flex-grow: 0;
+    align-items: center;
+}
+a.nav-link{
+    vertical-align: bottom;
+}
+
+#top_row nav{
+  list-style: none;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  /*background-color: #ffffff;
+  background-image: url("../images/marble.jpeg");*/
+  margin: auto;
+}
+
+li.nav-item{
+    align-self: center;
+}
+
+/*Top row navigation features regarding selectd page*/
+#top_row nav a {
+    text-decoration: none;
+    font-family: 'Enriqueta, serif';
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-weight: 400;
+    padding: 10px;
+    color: #000000;
+}
+
+#top_row nav a.selected {
+    /*background: #f6f6f6;*/
+    color: #800020;
+}
+
+#top_row nav a:hover {
+    /*background: #f6f6f6;*/
+    color: #800020;
+}
+
+#best_times{
+    text-decoration: none;
+    font-family: 'Enriqueta, serif';
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px;
+    color: #800020;
+    background: #f6f6f6;
+}
+
+#best_times:hover {
+    background: #f6f6f6;
+    text-decoration: underline;
+}
+
+/*#location{
+    background-image: url("../images/inside_tree.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 33em;
+}*/
+
+#cupcakes {
+    background-image: url("../images/cupcakes.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 28em;
+}
+
+#map{
+    overflow:hidden;
+    padding-bottom: 28em;
+    position:relative;
+    height:0;
+}
+
+#map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#coffee{
+    background-image: url("../images/cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 28em;
+    margin-left: 0;
+}
+
+/*Home page chocolate cake image*/
+#inside-couch .col-lg-9{
+    background-image: url("../images/inside.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 37em;
+}
+
+#inside-couch .col-lg-3{
+    background-image: url("../images/vert_wood2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 37em;
+}
+
+#inside-couch .col-lg-3 p{
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 70px;
+}
+
+#inside-couch .col-lg-3 h3{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+
+.card-img-top{
+    width: 23em;
+    height: 20em;
+    align-self: center;
+}
+
+.card{
+    text-align: center;
+    padding: 10px;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.card-text-2{
+    font-size: 0.745em;
+}
+
+hr{
+  border-top: 3px solid;
+}
+
+table{
+    width: 100%;
+    border: 3px solid #075F8A;
+    border-spacing: 3px;
+    border-collapse: collapse;
+}
+
+th {
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+}
+
+th, td, tr{
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #7FD5E5;
+}
+
+td, tr{
+    font-size: 0.85em;
+}
+
+.table{
+    margin-bottom: 0rem;
+}
+
+/*
+CONTACT FORM
+*/
+
+#contact-form {
+    padding-left:10em;
+}
+
+
+legend{
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+button{
+    border-style: none;
+}
+.form_label{
+      color: #ffffff;
+}
+
+.centered-row {
+    display: flex;
+    justify-content: center;
+}
+/*input:invalid {
+  border: 4px solid red;
+}*/
+
+/*.progressbar{
+    counter-reset: step;
+}
+.progressbar li{
+    list-style-type: none;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+}
+.progressbar li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    line-height: 30px;
+    background-color: white;
+}
+.progressbar li:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after{
+      content: none;
+}
+.progressbar li:active{
+      color: green;
+}
+.progressbar li.active:before{
+    border-color: green;
+    background-color: green;
+}
+.progressbar li.active + li:after{
+    background-color: green;
+}*/
+
+/*
+PRODUCT GALLERY
+*/
+
+/*Carousel image height*/
+.carousel-inner img{
+    height: 33em;
+}
+
+/*Carousel controls*/
+.carousel-control-next, .carousel-control-prev {
+    z-index: 100;
+}
+/*
+/*
+Cake Finder Helper
+*/
+#cake-helper{
+    padding: 10px;
+    background-image: url("../images/helper-cakes2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 24em;
+    text-align: center;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    color: #ffffff;
+}
+
+#cake-helper h3{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 3em;
+}
+
+#cake-helper a{
+    font-size: 2em;
+}
+
+#cake-helper a:hover{
+    text-decoration: underline;
+}
+
+/*Styling for the caption of the cake carousel*/
+.carousel-caption{
+    margin-bottom: 5em;
+    padding: 10px;
+}
+
+
+.dropdown-menu{
+    top:unset;
+    left:unset;
+}
+
+.custom_orders_details {
+   -webkit-text-decoration-line: underline; /* Safari */
+   text-decoration-line: underline;
+}
+.text_details{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+/*Styling for Special Event */
+.special_events_image {
+    height:30em;
+}
+
+.next-button img{
+    height: 3em;
+    margin-left: 65em;
+}
+
+.submit-button img{
+    height: 3em;
+    margin-left: 62.5em;
+}
+
+#fullname{
+    margin-left: 7em;
+}
+
+#address{
+    margin-left: 3em;
+}
+
+
+#zipcode{
+    margin-left: 5.5em;
+}
+
+#email{
+    margin-left: 7em;
+}
+
+#phone{
+    margin-left: 2.7em;
+}
+
+#pickupd{
+    margin-left: 4em;
+    width: 62%;
+}
+
+#pickupt{
+    margin-left: 4em;
+    width: 62%;
+}
+.pie-selector {
+    margin-left: 3em;
+    width: 62%;
+}
+
+#pie-prices{
+    margin-bottom: 2em;
+}
+
+#inquiry_text{
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    color: #000000;
+    font-size: 2em;
+}
+
+#cake-helper a{
+    color: white;
+}
+
+#help-me-choose-intro{
+    text-align: center;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    background-image: url("../images/plan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 48em;
+    color: white;
+    margin-top: 0;
+}
+
+#help-text{
+    font-size: 4em;
+    padding-top: 2.6em;
+}
+
+#help-description{
+    font-size: 3em;
+}
+
+#start-button{
+    padding: 10px;
+    background-color: white;
+    color: #800020;
+    outline: 2px solid;
+    outline-color: #800020;
+}
+
+#start-button:hover{
+    padding: 10px;
+    background-color: #800020;
+    color: white;
+    outline: 2px solid;
+    outline-color: white;
+    text-decoration: underline;
+}
+
+#survey{
+    display: none;
+}
+
+#survey .col-lg-2{
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+.circle {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.survey-response{
+    background-color: gray;
+    padding: 10px;
+}
+.survey-response:hover{
+    background-color: green;
+    padding: 10px;
+}
+#theCake{
+    visibility: hidden;
+    background-image: url("../images/help_me_choose/choco_choco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: white;
+    margin-top: 0;
+    background-position: center center;
+    background-size: 35em;
+    height:35em;
+    display: none;
+    text-align: center;
+}
+#theCakeComment {
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    height: 60em;
+    color: blue;
+    margin-top: 0;
+    text-align: center;
+    font-size: x-large;
+}
+.background-triangle {
+    width: 100%;
+    height: 10%;
+    border-left: 90px solid transparent;
+    border-top: 80px solid #f0f0f0;
+}
+
+.question{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    height: 4em;
+}
+
+.question p{
+    padding-top: 1em;
+}
+
+
+/*Question one icons*/
+#hollow-circle-11{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/hippie.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-11:hover{
+    border-color: green;
+}
+
+#hollow-circle-12{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/boy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-12:hover{
+    border-color: green;
+}
+
+#hollow-circle-13{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/girl.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-13:hover{
+    border-color: green;
+}
+#hollow-circle-14{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/elder.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-14:hover{
+    border-color: green;
+}
+
+/*Question 2 icons*/
+#hollow-circle-21{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/money_piggy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-21:hover{
+    border-color: green;
+}
+#hollow-circle-22{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/money_sack.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-22:hover{
+    border-color: green;
+}
+#hollow-circle-23{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/money_bank.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-23:hover{
+    border-color: green;
+}
+
+/* Quesrtion 3 icons*/
+#hollow-circle-31{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/modern.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-31:hover{
+    border-color: green;
+}
+
+#hollow-circle-32{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/old_fashion.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-32:hover{
+    border-color: green;
+}
+
+#hollow-circle-33{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/minimalistic.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-33:hover{
+    border-color: green;
+}
+#hollow-circle-34{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/extravagant.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-34:hover{
+    border-color: green;
+}
+
+/* Quesrtion 4 icons*/
+#hollow-circle-41{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/earth_tones.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-41:hover{
+    border-color: green;
+}
+
+#hollow-circle-42{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/snow.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-42:hover{
+    border-color: green;
+}
+
+#hollow-circle-43{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/city.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-43:hover{
+    border-color: green;
+}
+#hollow-circle-44{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/easter_bunny.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-44:hover{
+    border-color: green;
+}
+
+/* Quesrtion 5 icons*/
+#hollow-circle-51{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/spicy.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-51:hover{
+    border-color: green;
+}
+
+#hollow-circle-52{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/fruits.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-52:hover{
+    border-color: green;
+}
+
+#hollow-circle-53{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/chocolate.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-53:hover{
+    border-color: green;
+}
+#hollow-circle-54{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/question.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-54:hover{
+    border-color: green;
+}
