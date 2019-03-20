@@ -69,29 +69,30 @@
             </div>
 
             <div id = "content">
+              <div >
 
-                  <form id="contact-form" action="mailto:infoneeded@thebutterwood.com?subject=Customer%20Inquiry" method="POST" target = "_blank"
+                  <form id="contact-form"  action="mailto:infoneeded@thebutterwood.com?subject=Customer%20Inquiry" method="POST" target = "_blank"
   enctype="text/plain" >
                     <div >
                         <fieldset>
                             <p id="inquiry_text">Send us an Inquiry:</p>
-
-                            <div class = "row">
-                              <div class = "col-lg-12">
+                            <div class="input-group input-group-sm form_input">
                                 <legend>Personal Information</legend>
-                                Name:
-                                <input class="form_input" id = "fullname" type = "text" name = "name" placeholder = "Your Name" size="100" maxlength="250" required />
-                                *<br/><br/>
-
-                                Zip Code:
-                                <input class="form_input" id = "zipcode" type = "text" name = "zip-code" placeholder = "Zip Code" size="100" minLength = "5" maxlength="5" onkeypress="isInputNumber(event)" required/>
-                                *<br/><br/>
-
-                                Email:
-                                <input class="form_input" id="email" type = "email"  name="emailaddress" placeholder="abc@defg.com" size = "100" required />
-                                *<br/><br/>
+                                <span>Name: &nbsp;</span>
+                                <input class="form-control" id = "fullname" type = "text" name = "name" placeholder = "Your Name"  maxlength="30" required />
+                                 &nbsp;*<br/><br/>
                             </div>
-                          </div>
+                            <div class="input-group input-group-sm form_input">
+                                <span>Zip Code: &nbsp;</span>
+                                <input class="form-control" id = "zipcode" type = "text" name = "zip-code" placeholder = "Zip Code"  minLength = "5" maxlength="5" onkeypress="isInputNumber(event)" required/>
+                                &nbsp;*<br/><br/>
+                            </div>
+                            <div class="input-group input-group-sm form_input">
+                                <span>Email: &nbsp;</span>
+                                <input class="form-control" id="email" type = "email"  name="emailaddress" placeholder="abc@defg.com"  required />
+                                 &nbsp;*<br/><br/>
+                            </div>
+
                             <div class = "row">
                               <div class = "col-lg-6">
                                 <legend>Message</legend>
@@ -119,7 +120,7 @@
 
                     </div>
                   </form>
-
+                </div>
             </div>
             <hr>
             <footer>
