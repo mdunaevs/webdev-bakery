@@ -909,3 +909,26 @@ button{
 #hollow-circle-54:hover{
     border-color: green;
 }
+
+@media screen and (max-width: 480px){
+    #custom_order_info{
+        margin-bottom: 0em;
+        font-size: 0.65em;
+    }
+    #custom_order_info h2{
+        margin-bottom: 0em;
+        font-size: 2em;
+    }
+    #custom_order_info h4{
+        margin-bottom: 0em;
+        font-size: 2em;
+    }
+    #custom_order_info img{
+        height: 25px;
+        width: 25px
+    }
+
+    .carousel_description{
+        margin-bottom: 0em;
+    }
+}
