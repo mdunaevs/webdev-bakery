@@ -23,7 +23,6 @@
                 });
             });
         </script>
-
         <title>The Butterwood Bake Consortium</title>
     </head>
 
@@ -36,10 +35,13 @@
                 </header>
 
                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Deals with responsiveness of the navigation bar. When the screen size is shrunken, the
+                    navigation bar becomes a collapsable dropdown.-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Creates list with anchor tags to the pages which acts as the navigation bar -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item navbar-brand">
@@ -64,134 +66,135 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Inquiry</a>
                             </li>
-
                         </ul>
-
                     </div>
-
                 </nav>
-
-                <!-- <a href = "index.html" class = "selected">Home</a>
-                    <a href = "product_gallery.html">Product Gallery</a>
-                    <a href = "custom_orders.html">Custom Orders</a>
-                    <a href = "special_events.html">Special Events</a>
-                    <a href = "contact.html">Contact</a>
-                </nav> -->
             </div>
 
             <div id = "content">
-              <!-- Add pic and info of pie prices-->
+              <!-- Picture and information regarding pie prices-->
               <div id="pie-info">
-                <div class = "row">
-                    <div class = "col-lg-6">
-                        <a href = "https://postmates.com/merchant/the-butterwood-bake-consortium-pittsburgh" target = "_blank">
-                        <img class="d-block w-100 special_events_image" src="images/pie-offer.jpg" ></a>
-                    </div>
-                    <div class = "col-lg-6">
-                        <img class="d-block w-100 special_events_image" src="images/vert_wood2.jpeg" >
-                        <div class="carousel-caption">
-                          <h2 id = "pie-prices">Starting Prices: $35-45<br/><br/></h4>
-                        </div>
-                    </div>
+                  <div class = "row">
+                      <div class = "col-lg-6">
+                          <a href = "https://postmates.com/merchant/the-butterwood-bake-consortium-pittsburgh" target = "_blank">
+                          <img class="d-block w-100 special_events_image" src="images/pie-offer.jpg" ></a>
+                      </div>
+                      <div class = "col-lg-6">
+                          <img class="d-block w-100 special_events_image" src="images/vert_wood2.jpeg" >
+                          <div class="carousel-caption">
+                            <h2 id = "pie-prices">Starting Prices: $35-45<br/><br/></h4>
+                          </div>
+                      </div>
                   </div>
               </div>
+
+              <!-- Additional Features Custom Online Order Form EC-->
               <form>
-                <div id="tabs">
-                    <ul>
-                        <li><a href = "#tabs-1">Personal Information</a><li>
-                        <li><a href = "#tabs-2">Pie Information</a><li>
-                        <li><a href = "#tabs-3">Delivery Information</a><li>
-                    </ul>
+                  <!-- Jquery built in tabs function-->
+                  <div id="tabs">
+                      <ul>
+                          <li><a href = "#tabs-1">Personal Information</a><li>
+                          <li><a href = "#tabs-2">Pie Information</a><li>
+                          <li><a href = "#tabs-3">Delivery Information</a><li>
+                      </ul>
 
-                    <fieldset>
-                        <div id = "tabs-1">
-                            Name:
-                            <input class="form_input" id = "fullname" type = "text" name = "name" placeholder = "Your Name" size="100" maxlength="250" required />
-                            *<br/><br/>
-                            Billing Address:
-                            <input class = "form_input" id = "address" type="text" name="billing-address" placeholder="Billing Address" size = "100" maxlength="250" required>
-                            *<br/><br/>
+                      <!-- The first tab contians personal information about the user such as name,
+                      addresss, zip code, email, and phone number-->
+                      <fieldset>
+                          <div id = "tabs-1">
+                              Name:
+                              <input class="form_input" id = "fullname" type = "text" name = "name" placeholder = "Your Name" size="100" maxlength="250" required />
+                              *<br/><br/>
+                              Billing Address:
+                              <input class = "form_input" id = "address" type="text" name="billing-address" placeholder="Billing Address" size = "100" maxlength="250" required>
+                              *<br/><br/>
 
-                            Zip Code:
-                            <input class="form_input" id = "zipcode" type = "text" name = "zip-code" placeholder = "Zip Code" size="100" minLength = "5" maxlength="5" onkeypress="isInputNumber(event)" required/>
-                            *<br/><br/>
+                              Zip Code:
+                              <input class="form_input" id = "zipcode" type = "text" name = "zip-code" placeholder = "Zip Code" size="100" minLength = "5" maxlength="5" onkeypress="isInputNumber(event)" required/>
+                              *<br/><br/>
 
-                            Email:
-                            <input class="form_input" id="email" type = "email"  name="emailaddress" placeholder="abc@defg.com" size = "100" required />
-                            *<br/><br/>
+                              Email:
+                              <input class="form_input" id="email" type = "email"  name="emailaddress" placeholder="abc@defg.com" size = "100" required />
+                              *<br/><br/>
 
-                            Phone Number:
-                            <input class = "form_input" id = "phone" type="text" name="phone-number" placeholder="Phone Number" size = "100" minLength = "10" maxlength="10" onkeypress="isInputNumber(event)" required>
-                            *<br/><br/>
-                            <button class = "next-button" onclick="enteredValidPersonalInfo()">
-                                <img src="images/next.png" />
-                            </button>
-                        </div>
+                              Phone Number:
+                              <input class = "form_input" id = "phone" type="text" name="phone-number" placeholder="Phone Number" size = "100" minLength = "10" maxlength="10" onkeypress="isInputNumber(event)" required>
+                              *<br/><br/>
+                              <!-- Button that validates whether the inputted information is correct. If it is not,
+                              the next tabe for the form will not be accessible-->
+                              <button class = "next-button" onclick="enteredValidPersonalInfo()">
+                                  <img src="images/next.png" />
+                              </button>
+                          </div>
+                      </fieldset>
 
-                    </fieldset>
+                      <!-- The second tab contians pie information such as what pie the user wants and how many-->
+                      <fieldset>
+                          <div id ="tabs-2">
+                              Select your pie:
+                              <select class = "form_input pie-selector" name="pie-selection">
+                                  <option value="apple-pie">Apple</option>
+                                  <option value="bananacream-pie">Banana Cream</option>
+                                  <option value="butternutsquash-pie">Butternut Squash</option>
+                                  <option value="butterscotch-pie">Butterscotch</option>
+                                  <option value="chocolatecream-pie">Chocolate Cream</option>
+                                  <option value="coconutcream-pie">Coconut Cream</option>
+                                  <option value="mango-pie">Mango</option>
+                                  <option value="pecan-pie">Pecan</option>
+                                  <option value="pumpkin-pie">Pumpkin</option>
+                                  <option value="sweetpotato-pie">Sweet Potato</option>
+                                  <option value="vanillacustard-pie">Vanilla custard</option>
+                              </select>
+                              <br/><br/>
+                              Amount of Pies:
+                              <select class = "form_input pie-selector" name="amt-pies">
+                                  <option value="one-pie">1</option>
+                                  <option value="two-pie">2</option>
+                                  <option value="three-pie">3</option>
+                                  <option value="four-pie">4</option>
+                                  <option value="five-pie">5</option>
+                                  <option value="six-pie">6</option>
+                                  <option value="seven-pie">7</option>
+                                  <option value="eight-pie">8</option>
+                                  <option value="nine-pie">9</option>
+                                  <option value="ten-pie">10</option>
+                              </select>
+                              <br/><br/>
+                              <button class = "next-button" onclick="enteredValidPieInfo()">
+                                  <img src="images/next.png" />
+                              </button>
+                          </div>
+                      </fieldset>
 
-                    <fieldset>
-                        <div id ="tabs-2">
-                            Select your pie:
-                            <select class = "form_input pie-selector" name="pie-selection">
-                                <option value="apple-pie">Apple</option>
-                                <option value="bananacream-pie">Banana Cream</option>
-                                <option value="butternutsquash-pie">Butternut Squash</option>
-                                <option value="butterscotch-pie">Butterscotch</option>
-                                <option value="chocolatecream-pie">Chocolate Cream</option>
-                                <option value="coconutcream-pie">Coconut Cream</option>
-                                <option value="mango-pie">Mango</option>
-                                <option value="pecan-pie">Pecan</option>
-                                <option value="pumpkin-pie">Pumpkin</option>
-                                <option value="sweetpotato-pie">Sweet Potato</option>
-                                <option value="vanillacustard-pie">Vanilla custard</option>
-                            </select>
-                            <br/><br/>
-                            Amount of Pies:
-                            <select class = "form_input pie-selector" name="amt-pies">
-                                <option value="one-pie">1</option>
-                                <option value="two-pie">2</option>
-                                <option value="three-pie">3</option>
-                                <option value="four-pie">4</option>
-                                <option value="five-pie">5</option>
-                                <option value="six-pie">6</option>
-                                <option value="seven-pie">7</option>
-                                <option value="eight-pie">8</option>
-                                <option value="nine-pie">9</option>
-                                <option value="ten-pie">10</option>
-                            </select>
-                            <br/><br/>
-                            <button class = "next-button" onclick="enteredValidPieInfo()">
-                                <img src="images/next.png" />
-                            </button>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <div id="tabs-3">
-                            Pickup Date:
-                            <input class = "form_input" type="date" id="pickupd" name="pickupdate" value="2019-03-14" min="2019-03-14" max="2019-12-31" size = "100" required>
-                            * <br/><br/>
-                            Pickup Time:
-                            <input class = "form_input" type="time" id="pickupt" name="pickuptime" min="9:00" max="18:00" size = "100" required>
-                            * <br/><br/>
-                            <button class = "submit-button" type = "submit">
-                                <img src="images/submit.png" />
-                            </button>
-                        </div>
-                    </fieldset>
-
-
-                </div>
+                      <!-- The third tab contians pickup information such as date and time-->
+                      <fieldset>
+                          <div id="tabs-3">
+                              <!-- Validates the user has entered proper date-->
+                              Pickup Date:
+                              <input class = "form_input" type="date" id="pickupd" name="pickupdate" value="2019-03-14" min="2019-03-14" max="2019-12-31" size = "100" required>
+                              * <br/><br/>
+                              <!-- Validates the user has entered proper time-->
+                              Pickup Time:
+                              <input class = "form_input" type="time" id="pickupt" name="pickuptime" min="9:00" max="18:00" size = "100" required>
+                              * <br/><br/>
+                              <button class = "submit-button" type = "submit">
+                                  <img src="images/submit.png" />
+                              </button>
+                          </div>
+                      </fieldset>
+                  </div>
               </form>
             </div>
 
             <footer>
                 <div class="container">
+                    <!-- Deals with responsive footer-->
                     <div class="row">
+                        <!-- Image with the logo-->
                         <div class="col-sm-3">
                             <img src = "images/logo.png" height="150" width="175"/>
                         </div>
+                        <!-- Information about the store, including Location, Phone Number, and email address-->
                         <div class="col-sm-4">
                             Lawrenceville
                             <br/>
@@ -201,6 +204,7 @@
                             <br/>
                             <a href = "mailto:info@thebutterwood.com">info@thebutterwood.com</a>
                         </div>
+                        <!-- Information about the hours of operation. There is also a link to the best times graphs-->
                         <div class="col-sm-3">
                             Hours
                             <br/>
@@ -209,6 +213,7 @@
                             Sun 10AM - 9PM</p>
                             <a href="visit.html#best_times_week" id="best_times">Best Times</a>
                         </div>
+                        <!-- Links to external social media pages such as facebook and instagram-->
                         <div class="col-sm-2">
                             <a href = "https://www.facebook.com/thebutterwoodbakeconsortium" target = "_blank"><img src = images/facebook.png height = "50" width = "50" /></a>
                             <a href = "https://www.instagram.com/thebutterwoodbakeconsortium/" target = "_blank"><img src = images/instagram.png height = "50" width = "50"/></a>
@@ -216,8 +221,8 @@
                     </div>
                 </div>
             </footer>
-
-
+        </div>
+        <!-- Imports for jquery and bootstrap-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>

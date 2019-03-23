@@ -10,6 +10,8 @@ html{
   padding-right: 0 !important;
 }
 
+
+/* RESPONSIVE COLUMNS TEXT PROPERTIES */
 .col-sm-2{
   font-family: 'Enriqueta, serif';
   font-variant: small-caps;
@@ -45,9 +47,14 @@ p.col-sm {
     font-family: Georgia;
     padding-top: 5px;
 }
+
+/* RESPONSIVE COLUMNS IMAGE PROPERTY */
+
 img.col-sm {
     padding: 5px;
 }
+
+/* FOOTER */
 
 footer{
     /*background-color: #ffffff;*/
@@ -57,26 +64,42 @@ footer{
     font-size: 1.2em;
 }
 
-/*Restaurant name bootstrap*/
-/*#top_row h1{
+/* Best times button on footer */
+/* Styling for button */
+#best_times{
+    text-decoration: none;
     font-family: 'Enriqueta, serif';
-    font-variant: small-caps;
-    color: #ffffff;
-    text-align: left;
-    font-size: 3vw;
-}*/
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px;
+    color: #800020;
+    background: #f6f6f6;
+}
 
+/* Styling for button when hovering over it */
+#best_times:hover {
+    background: #f6f6f6;
+    text-decoration: underline;
+}
+
+/* NAV BAR */
+
+/* Makes logo in nav bar 100 pixels */
 img.logo{
     width: 100px;
 }
+
+/* Aligns nav bar to center of page */
 .navbar-collapse {
     flex-grow: 0;
     align-items: center;
 }
+
 a.nav-link{
     vertical-align: bottom;
 }
 
+/* Places navigation bar in better position with repsect to other items */
 #top_row nav{
   list-style: none;
   padding: 5px;
@@ -87,11 +110,12 @@ a.nav-link{
   margin: auto;
 }
 
+/* Aligns text of list items in nave bar to center */
 li.nav-item{
     align-self: center;
 }
 
-/*Top row navigation features regarding selectd page*/
+/* Top row navigation features regarding selectd page */
 #top_row nav a {
     text-decoration: none;
     font-family: 'Enriqueta, serif';
@@ -112,29 +136,9 @@ li.nav-item{
     color: #800020;
 }
 
-#best_times{
-    text-decoration: none;
-    font-family: 'Enriqueta, serif';
-    font-size: 1em;
-    font-weight: 400;
-    padding: 10px;
-    color: #800020;
-    background: #f6f6f6;
-}
+/* LOCATION DIV ON VISIT US PAGE */
 
-#best_times:hover {
-    background: #f6f6f6;
-    text-decoration: underline;
-}
-
-/*#location{
-    background-image: url("../images/inside_tree.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 33em;
-}*/
-
+/* Sets background image of cupcakes div */
 #cupcakes {
     background-image: url("../images/cupcakes.webp");
     background-repeat: no-repeat;
@@ -143,6 +147,7 @@ li.nav-item{
     height: 28em;
 }
 
+/* Styles the map on the Visit Us page */
 #map{
     overflow:hidden;
     padding-bottom: 28em;
@@ -158,6 +163,7 @@ li.nav-item{
     position:absolute;
 }
 
+/* Sets background image of coffee div */
 #coffee{
     background-image: url("../images/cafe.jpg");
     background-repeat: no-repeat;
@@ -167,7 +173,9 @@ li.nav-item{
     margin-left: 0;
 }
 
-/*Home page chocolate cake image*/
+/* HOME PAGE ABOUT DIV*/
+
+/* Home page interior image */
 #inside-couch .col-lg-9{
     background-image: url("../images/inside.webp");
     background-repeat: no-repeat;
@@ -175,7 +183,7 @@ li.nav-item{
     background-position:center;
     height: 37em;
 }
-
+/* Home page wood background */
 #inside-couch .col-lg-3{
     background-image: url("../images/vert_wood2.jpeg");
     background-repeat: no-repeat;
@@ -184,6 +192,7 @@ li.nav-item{
     height: 37em;
 }
 
+/* Home page text styling */
 #inside-couch .col-lg-3 p{
     padding: 10px;
     text-align: left;
@@ -191,6 +200,7 @@ li.nav-item{
     margin-top: 70px;
 }
 
+/* Home page text styling */
 #inside-couch .col-lg-3 h3{
     text-align: center;
     color: #ffffff;
@@ -200,13 +210,16 @@ li.nav-item{
     font-style: italic;
 }
 
+/* HOME PAGE NEWS REPORTS DIV*/
 
+/* Styles the image of the card*/
 .card-img-top{
     width: 23em;
     height: 20em;
     align-self: center;
 }
 
+/* Styles the size and postioning of the card*/
 .card{
     text-align: center;
     padding: 10px;
@@ -214,14 +227,19 @@ li.nav-item{
     margin-top: 1em;
 }
 
+/* Styles the text of the card*/
 .card-text-2{
     font-size: 0.745em;
 }
 
+/* Styles horizontal line */
 hr{
   border-top: 3px solid;
 }
 
+/* TABLE ON VISIT US PAGE */
+
+/* Styles table size and border width and color */
 table{
     width: 100%;
     border: 3px solid #075F8A;
@@ -229,19 +247,21 @@ table{
     border-collapse: collapse;
 }
 
+/* Styles table header */
 th {
     height: 40px;
     font-weight: bold;
     text-align: center;
     font-size: 1em;
 }
-
+/* Styles table header, row, column size, padding, and center text */
 th, td, tr{
     padding: 2px;
     text-align: center;
     border: 1px solid #7FD5E5;
 }
 
+/* Makes font-size of row and columns smaller */
 td, tr{
     font-size: 0.85em;
 }
@@ -250,27 +270,26 @@ td, tr{
     margin-bottom: 0rem;
 }
 
-/*
-CONTACT FORM
-*/
+/* CONTACT FORM */
 
-@media (min-width:641px)  { 
+@media (min-width:641px)  {
     #contact-form {
       padding-left:10em;
       padding-right:10em;
     }
 }
 
+/* Styles legend text and position */
 legend{
     color: #800020;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-
 button{
     border-style: none;
 }
+/* Makes labels black */
 .form_label{
       color: #ffffff;
 }
@@ -279,61 +298,9 @@ button{
     display: flex;
     justify-content: center;
 }
-/*input:invalid {
-  border: 4px solid red;
-}*/
 
-/*.progressbar{
-    counter-reset: step;
-}
-.progressbar li{
-    list-style-type: none;
-    float: left;
-    width: 33.33%;
-    position: relative;
-    text-align: center;
-    margin-top: 10px;
-}
-.progressbar li:before{
-    content: counter(step);
-    counter-increment: step;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    line-height: 30px;
-    background-color: white;
-}
-.progressbar li:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    top: 15px;
-    left: -50%;
-    z-index: -1;
-}
-.progressbar li:first-child:after{
-      content: none;
-}
-.progressbar li:active{
-      color: green;
-}
-.progressbar li.active:before{
-    border-color: green;
-    background-color: green;
-}
-.progressbar li.active + li:after{
-    background-color: green;
-}*/
 
-/*
-PRODUCT GALLERY
-*/
+/* PRODUCT GALLERY */
 
 /*Carousel image height*/
 .carousel-inner img{
@@ -344,10 +311,10 @@ PRODUCT GALLERY
 .carousel-control-next, .carousel-control-prev {
     z-index: 100;
 }
-/*
-/*
-Cake Finder Helper
-*/
+
+/* CAKE HELPER WHICH CONNECTS TO  help_me_choose PAGE*/
+
+/* Styles background and size of div cake-helper */
 #cake-helper{
     padding: 10px;
     background-image: url("../images/helper-cakes2.jpg");
@@ -361,46 +328,61 @@ Cake Finder Helper
     color: #ffffff;
 }
 
+/* Aligns text */
 #cake-helper h3{
     text-align: center;
     margin-top: 3em;
     font-size: 3em;
 }
 
+/* Font-size of anchor is made larger */
 #cake-helper a{
     font-size: 2em;
 }
 
+/* When hovering over anchor it is underlined */
 #cake-helper a:hover{
     text-decoration: underline;
 }
 
-/*Styling for the caption of the cake carousel*/
+#cake-helper a{
+    color: white;
+}
+
+/* PRODUCT GALLERY CAROUSEL */
+
+/* Styling for the caption of the cake carousel */
 .carousel-caption{
     margin-bottom: 5em;
     padding: 10px;
 }
 
-
+/* Styling for responsive drop down menu */
 .dropdown-menu{
     top:unset;
     left:unset;
 }
 
+/* Underlines the detail headers */
 .custom_orders_details {
    -webkit-text-decoration-line: underline; /* Safari */
    text-decoration-line: underline;
 }
+
 .text_details{
     padding-right: 40px;
     padding-left: 40px;
 }
 
-/*Styling for Special Event */
+/* SPECIAL EVENTS */
+
+/* Styles image height */
 .special_events_image {
     height:30em;
 }
 
+
+/* PLACE AN ORDER  */
 .next-button img{
     height: 3em;
     margin-left: 65em;
@@ -418,7 +400,6 @@ Cake Finder Helper
 #address{
     margin-left: 3em;
 }
-
 
 #zipcode{
     margin-left: 5.5em;
@@ -441,6 +422,7 @@ Cake Finder Helper
     margin-left: 4em;
     width: 62%;
 }
+
 .pie-selector {
     margin-left: 3em;
     width: 62%;
@@ -450,6 +432,8 @@ Cake Finder Helper
     margin-bottom: 2em;
 }
 
+/* INQUIRY FORM */
+
 #inquiry_text{
     font-family: 'Enriqueta, serif';
     font-variant: small-caps;
@@ -457,10 +441,9 @@ Cake Finder Helper
     font-size: 2em;
 }
 
-#cake-helper a{
-    color: white;
-}
+/* HELP ME CHOOSE */
 
+/* Help me choose introduction page */
 #help-me-choose-intro{
     text-align: center;
     font-family: 'Enriqueta, serif';
@@ -474,15 +457,18 @@ Cake Finder Helper
     margin-top: 0;
 }
 
+/* Help me choose introduction page text */
 #help-text{
     font-size: 4em;
     padding-top: 2.6em;
 }
 
+/* Help me choose introduction page description */
 #help-description{
     font-size: 3em;
 }
 
+/* Help me choose introduction page start button */
 #start-button{
     padding: 10px;
     background-color: white;
@@ -491,6 +477,7 @@ Cake Finder Helper
     outline-color: #800020;
 }
 
+/* Help me choose introduction page start button hover*/
 #start-button:hover{
     padding: 10px;
     background-color: #800020;
@@ -500,16 +487,19 @@ Cake Finder Helper
     text-decoration: underline;
 }
 
+/* Help me choose introduction page, initially has no questions showing*/
 #survey{
     display: none;
 }
 
+/* Progress bar is aligned properly */
 #survey .col-lg-2{
     text-align: left;
     padding-left: 80px;
     padding-top: 10px;
 }
 
+/* Progress bar circles */
 .circle {
     background-color: gray;
     width: 200px;
@@ -518,14 +508,18 @@ Cake Finder Helper
     margin: 10px;
 }
 
+/* Ovals aruond the options */
 .survey-response{
     background-color: gray;
     padding: 10px;
 }
+/* Ovals aruond the options are green when hovered overs */
 .survey-response:hover{
     background-color: green;
     padding: 10px;
 }
+
+/* After all questions are answered cake is displayed */
 #theCake{
     visibility: hidden;
     background-image: url("../images/help_me_choose/choco_choco.jpg");
@@ -540,6 +534,8 @@ Cake Finder Helper
     display: none;
     text-align: center;
 }
+
+/* Link to where cake was found on yelp*/
 #theCakeComment {
     font-family: 'Enriqueta, serif';
     font-variant: small-caps;
@@ -549,6 +545,8 @@ Cake Finder Helper
     text-align: center;
     font-size: x-large;
 }
+
+/* Background of question statement*/
 .background-triangle {
     width: 100%;
     height: 10%;
@@ -556,6 +554,7 @@ Cake Finder Helper
     border-top: 80px solid #f0f0f0;
 }
 
+/* Question text styling */
 .question{
     background-color: #f0f0f0;
     text-align: center;
@@ -570,7 +569,7 @@ Cake Finder Helper
 }
 
 
-/*Question one icons*/
+/* Question one icons */
 #hollow-circle-11{
     width: 150px;
     height: 200px;
@@ -642,7 +641,7 @@ Cake Finder Helper
     border-color: green;
 }
 
-/*Question 2 icons*/
+/* Question 2 icons */
 #hollow-circle-21{
     width: 150px;
     height: 200px;
@@ -695,7 +694,7 @@ Cake Finder Helper
     border-color: green;
 }
 
-/* Quesrtion 3 icons*/
+/* Quesrtion 3 icons */
 #hollow-circle-31{
     width: 150px;
     height: 200px;
@@ -767,7 +766,7 @@ Cake Finder Helper
     border-color: green;
 }
 
-/* Quesrtion 4 icons*/
+/* Quesrtion 4 icons */
 #hollow-circle-41{
     width: 150px;
     height: 200px;
@@ -839,7 +838,7 @@ Cake Finder Helper
     border-color: green;
 }
 
-/* Quesrtion 5 icons*/
+/* Quesrtion 5 icons */
 #hollow-circle-51{
     width: 150px;
     height: 200px;
