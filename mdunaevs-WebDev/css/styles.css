@@ -381,6 +381,9 @@ button{
     height:30em;
 }
 
+.col-lg-12.text_details{
+    background-color: #fce4ec;
+}
 
 /* PLACE AN ORDER  */
 .next-button img{
