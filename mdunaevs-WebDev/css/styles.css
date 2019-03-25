@@ -934,4 +934,20 @@ button{
     .carousel_description{
         margin-bottom: 0em;
     }
+
+    .next-button img{
+        height: 3em;
+        margin-left: 15em;
+    }
+
+    .submit-button img{
+        height: 3em;
+        margin-left: 12.5em;
+    }
+}
+
+/* INDEX.HTML YOUTUBE VIDEO */
+#inside-video iframe{
+    width: 100%;
+    height: 44em;
 }

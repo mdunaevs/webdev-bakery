@@ -102,24 +102,36 @@
                       addresss, zip code, email, and phone number-->
                       <fieldset>
                           <div id = "tabs-1">
-                              Name:
-                              <input class="form_input" id = "fullname" type = "text" name = "name" placeholder = "Your Name" size="100" maxlength="250" required />
-                              *<br/><br/>
-                              Billing Address:
-                              <input class = "form_input" id = "address" type="text" name="billing-address" placeholder="Billing Address" size = "100" maxlength="250" required>
-                              *<br/><br/>
+                              <div class="input-group input-group-sm form_input align_inputs">
+                                  Name:
+                                  <input class="form-control" id = "fullname" type = "text" name = "name" placeholder = "Your Name" size="100" maxlength="250" required />
+                                  *<br/><br/>
+                              </div>
 
-                              Zip Code:
-                              <input class="form_input" id = "zipcode" type = "text" name = "zip-code" placeholder = "Zip Code" size="100" minLength = "5" maxlength="5" onkeypress="isInputNumber(event)" required/>
-                              *<br/><br/>
+                              <div class = "input-group input-group-sm form_input align_inputs">
+                                  Billing Address:
+                                  <input class="form-control" id = "address" type="text" name="billing-address" placeholder="Billing Address" size = "100" maxlength="250" required>
+                                  *<br/><br/>
+                              </div>
 
-                              Email:
-                              <input class="form_input" id="email" type = "email"  name="emailaddress" placeholder="abc@defg.com" size = "100" required />
-                              *<br/><br/>
+                              <div class = "input-group input-group-sm form_input align_inputs">
+                                  Zip Code:
+                                  <input class="form-control"  id = "zipcode" type = "text" name = "zip-code" placeholder = "Zip Code" size="100" minLength = "5" maxlength="5" onkeypress="isInputNumber(event)" required/>
+                                  *<br/><br/>
+                              </div>
 
-                              Phone Number:
-                              <input class = "form_input" id = "phone" type="text" name="phone-number" placeholder="Phone Number" size = "100" minLength = "10" maxlength="10" onkeypress="isInputNumber(event)" required>
-                              *<br/><br/>
+                              <div class = "input-group input-group-sm form_input align_inputs">
+                                  Email:
+                                  <input class="form-control"  id="email" type = "email"  name="emailaddress" placeholder="abc@defg.com" size = "100" required />
+                                  *<br/><br/>
+                              </div>
+
+                              <div class = "input-group input-group-sm form_input align_inputs">
+                                  Phone Number:
+                                  <input class="form-control"  id = "phone" type="text" name="phone-number" placeholder="Phone Number" size = "100" minLength = "10" maxlength="10" onkeypress="isInputNumber(event)" required>
+                                  *<br/><br/>
+                              </div>
+
                               <!-- Button that validates whether the inputted information is correct. If it is not,
                               the next tabe for the form will not be accessible-->
                               <button class = "next-button" onclick="enteredValidPersonalInfo()">
@@ -177,7 +189,7 @@
                               Pickup Time:
                               <input class = "form_input" type="time" id="pickupt" name="pickuptime" min="9:00" max="18:00" size = "100" required>
                               * <br/><br/>
-                              <button class = "submit-button" type = "submit">
+                              <button class = "submit-button" onclick="enteredValidDate()">
                                   <img src="images/submit.png" />
                               </button>
                           </div>

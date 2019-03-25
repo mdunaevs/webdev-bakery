@@ -38,7 +38,7 @@ function enteredValidPersonalInfo(){
     // after the @ symbol
     var emailA = document.getElementById("email").value;
     var at = emailA.indexOf("@");
-    var afterAt = emailA.substring(at + 1, zip.length);
+    var afterAt = emailA.substring(at + 1, emailA.length);
     if (at == -1 || afterAt.length == 0) {
         //alert("Not a valid e-mail!");
         nextPage = false;
